@@ -10,15 +10,20 @@ import image3 from '../assets/Brand/3.png'
 import image4 from '../assets/Brand/4.png'
 import image5 from '../assets/Brand/5.png'
 import image6 from '../assets/Brand/6.png'
+import CoffeeCard from "./CoffeeCard";
+import { useState } from "react";
 
 
 
-const AddCoffeeSec = () => {
+const AddCoffeeSec = ({coffees}) => {
+    // console.log(coffees);
+    const [loadedCoffees, setLoadedCoffees] =  useState(coffees)
     return (
         <div style={{backgroundImage: `url(${bg})`}}>
             <div className="flex flex-col items-center lg:mt-28 justify-center"> 
                 <p className="font-[raleway]"> ---Sip & Savor--- </p>
                 <h1 className="text-6xl text-[#331A15] font-bold">Our Popular Products</h1>
+                <h1 className="mt-4">Total Added Coffee :  Last  {coffees.length}</h1>
                 <Link to={'/addCoffee'} className="text-[#FFFFFF] text-xl mt-6 hover:bg-[#E3B577]  bg-[#E3B577] mb-10 btn border-2 flex items-center border-[#331A15]">Add Coffee <BsCup className="text-[#331A15]" /></Link>
             </div>
 
@@ -143,6 +148,13 @@ const AddCoffeeSec = () => {
                
                 </div>
             </div>
+
+              {/* Update Card */}
+
+              {
+                    coffees.map(coffee => <CoffeeCard key={coffee._id} loadedCoffees= {loadedCoffees} setLoadedCoffees={setLoadedCoffees} coffee= {coffee}></CoffeeCard>)
+                }
+             
 
             
 
