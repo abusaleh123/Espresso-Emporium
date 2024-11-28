@@ -32,8 +32,8 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className="bg-[#ECEAE3] ">
-        <div className="py-16 flex justify-evenly w-10/12 mx-auto " >
+      <div className="bg-[#ECEAE3] flex justify-center items-center ">
+        <div className="py-16 flex  justify-center   items-center  " >
        {/* Card 1 */}
        <div>
             <img  className="w-12 mb-4"  src={logo1} alt="" />
@@ -53,7 +53,7 @@ const Banner = () => {
             <p className="font-[raleway] w-3/4 mt-2  text-sm">The coffee is made of the green coffee beans which you will love</p>
             </div>
             {/* Card 4 */}
-       <div>
+       <div className="">
             <img className="w-12 mb-4"  src={logo4} alt="" />
             <h1 className="text-3xl">Proper Roasting</h1>
             <p className="font-[raleway] w-3/4 mt-2 text-sm">Your coffee is brewed by first roasting the green coffee beans</p>

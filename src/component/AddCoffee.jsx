@@ -1,9 +1,9 @@
-
+import bg from '../assets/more/11.png'
 
 const AddCoffee = () => {
     return (
-        <div>
-            <h2>Add Coffee</h2>
+        <div style={{backgroundImage : `url(${bg})`}}> 
+            
         </div>
     );
 };
