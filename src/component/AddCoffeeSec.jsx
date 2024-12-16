@@ -150,10 +150,10 @@ const AddCoffeeSec = ({coffees}) => {
             </div>
 
               {/* Update Card */}
-
+{/* 
               {
                     coffees.map(coffee => <CoffeeCard key={coffee._id} loadedCoffees= {loadedCoffees} setLoadedCoffees={setLoadedCoffees} coffee= {coffee}></CoffeeCard>)
-                }
+                } */}
              
 
             
